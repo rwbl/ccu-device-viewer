@@ -1,6 +1,9 @@
 # CCU Device Viewer
 Open Source Project viewing all devices and current values from the HomeMatic Smart Home Central Control Unit.
-HomeMatic Smart Home Central Control Unit all devices and current values viewer.
+![hmdv-1](https://user-images.githubusercontent.com/47274144/109273097-07c49400-7812-11eb-97cc-531363982171.png)
+**View Option: All datapoints for the device selected**
+![hmdv-2](https://user-images.githubusercontent.com/47274144/109273125-114dfc00-7812-11eb-8013-e798bbfc17a6.png)
+**View Option: Filter by XML Attribute ACTUAL_TEMPERATURE**
 
 ## Purpose
 * To view the state of devices and their datapoints as configured in the CCU.
@@ -10,7 +13,7 @@ HomeMatic Smart Home Central Control Unit all devices and current values viewer.
 * To view system variables name, value and ID.
 * To export or copy device or datapoint data.
 * To save XML-API HTTP response to a text file with XML tree.
-* To have fun developing with (B4J)[https://www.b4x.com/b4j.html]
+* To have fun developing with (B4J)[https://www.b4x.com/b4j.html].
 
 HomeMatic is a registered trademark of eQ-3 AG (Info)[https://www.HomeMatic.com].
 Requires the HomeMatic XML-API CCU Addon, which must be installed to enable reading values (Info)[https://github.com/hobbyquaker/XML-API].
@@ -60,13 +63,14 @@ For the systemvariables the concept is the same, i.e. http://ccu3-webui/addon/sy
 The data is parsed and added to the B4XTable name, value, ise_id with table columns Name, Value, ID
 
 ## Source Code
-The archive ccudeviceviewer.zip holds the B4J source code.
+The archive **ccudeviceviewer.zip** contains the (B4J)[https://www.b4x.com/b4j.html] source code.
 Additional libraries required: B4XCollections, B4XTable, jOkHttpUtils2, Json, Xml2Map, XUI Views.
 
 ## To-do
 * Change the value of a selected datapoint via B4X dialog ("quickset function").
 * Multiple XML attribute filters (instead one).
 * Run HomeMatic scripts remote and capture the output (to be explored).
+* Simplify the CCUClass.
 
 ## Licence
 GNU GENERAL Public LICENSE
