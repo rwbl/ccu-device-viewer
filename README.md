@@ -1,26 +1,25 @@
 # CCU Device Viewer
 Open Source Project viewing all devices and current values from the [HomeMatic](https://www.homematic.com) Smart Home [Central Control Unit](https://www.eq-3.com/products/homematic/detail/smart-home-central-control-unit-ccu3.html).
-#### View Option: All datapoints for the device selected
+##### View Option: All datapoints for the device selected
 ![hmdv-1](https://user-images.githubusercontent.com/47274144/109273097-07c49400-7812-11eb-97cc-531363982171.png)
-#### View Option: Filter by XML Attribute ACTUAL_TEMPERATURE
+##### View Option: Filter by XML Attribute ACTUAL_TEMPERATURE
 ![hmdv-2](https://user-images.githubusercontent.com/47274144/109273125-114dfc00-7812-11eb-8013-e798bbfc17a6.png)
 
 #### Purpose
 * To view the state of devices and their datapoints as configured in the CCU.
-* To get device datapoint ID (XML attribute ise_id) used for XML-API HTTP requests.
-* To quickly view the state of a device.
-* To filter a selected attribute for all devices, i.e. check low battery state XML attribute LOW_BAT.
+* To get device datapoint(s) ID (XML attribute ise_id = "NNN") used for XML-API HTTP requests via for example Domoticz Homeautomation.
+* To quickly view the status of a device.
+* To filter a selected attribute for all devices, i.e. check low battery state (XML attribute type = "LOW_BAT").
 * To view system variables name, value and ID.
 * To export or copy device or datapoint data.
 * To save XML-API HTTP response to a text file with XML tree.
 * To have fun developing with [B4J](https://www.b4x.com/b4j.html).
 
-[HomeMatic](https://www.homematic.com) is a registered trademark of [eQ-3 AG](https://www.eq-3.com/start.html).
-
 #### Requirements
 * HomeMatic Smart Home [Central Control Unit](https://www.eq-3.com/products/homematic/detail/smart-home-central-control-unit-ccu3.html).
-* HomeMatic [XML-API](https://github.com/hobbyquaker/XML-API) CCU addon, used to read/write values from/to the CCU.
-* Java 8 OR Java 11. Must[read](https://www.b4x.com/b4j.html) - Note: JavaFX is used.
+* [HomeMatic](https://www.homematic.com) is a registered trademark of [eQ-3 AG](https://www.eq-3.com/start.html).
+* HomeMatic [XML-API](https://github.com/hobbyquaker/XML-API) CCU addon to read values from the CCU.
+* Java 8 OR Java 11 to run the application **ccudeviceviewer.jar**. Must[read](https://www.b4x.com/b4j.html) - Note: JavaFX is used.
 
 ### Application
 * tested with an HomeMatic CCU3 3.55 10 and the XML-API CCU Addon 1.20.
