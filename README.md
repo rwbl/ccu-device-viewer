@@ -2,6 +2,7 @@
 Open Source Project viewing all devices and current values from the HomeMatic Smart Home Central Control Unit.
 ![hmdv-1](https://user-images.githubusercontent.com/47274144/109273097-07c49400-7812-11eb-97cc-531363982171.png)
 **View Option: All datapoints for the device selected**
+
 ![hmdv-2](https://user-images.githubusercontent.com/47274144/109273125-114dfc00-7812-11eb-8013-e798bbfc17a6.png)
 **View Option: Filter by XML Attribute ACTUAL_TEMPERATURE**
 
@@ -13,19 +14,19 @@ Open Source Project viewing all devices and current values from the HomeMatic Sm
 * To view system variables name, value and ID.
 * To export or copy device or datapoint data.
 * To save XML-API HTTP response to a text file with XML tree.
-* To have fun developing with (B4J)[https://www.b4x.com/b4j.html].
+* To have fun developing with [B4J](https://www.b4x.com/b4j.html).
 
-HomeMatic is a registered trademark of eQ-3 AG (Info)[https://www.HomeMatic.com].
-Requires the HomeMatic XML-API CCU Addon, which must be installed to enable reading values (Info)[https://github.com/hobbyquaker/XML-API].
+HomeMatic is a registered trademark of eQ-3 AG [Info](https://www.HomeMatic.com).
+Requires the HomeMatic XML-API CCU Addon, which must be installed to enable reading values [Info](https://github.com/hobbyquaker/XML-API).
 
 ## Requirements
-* Installation of the CCU (XML-API)[https://github.com/hobbyquaker/XML-API] addon.
+* Installation of the CCU [XML-API](https://github.com/hobbyquaker/XML-API) addon.
 * Java 8 including JavaFX OR
 * Java 11 with JavaFX.
 
 ## The application is 
 * tested with an HomeMatic CCU3 3.55 10 and the XML-API CCU Addon 1.20.
-* developed with (B4J)[https://www.b4x.com/b4j.html] v8.90 (more info)[https://www.b4x.com].
+* developed with [B4J](https://www.b4x.com/b4j.html) v8.90 [more info](https://www.b4x.com).
 * an open source project for personal use only according the GNU GENERAL Public LICENSE; Usage at your own risk.
 
 ## Installation Windows
@@ -63,7 +64,7 @@ For the systemvariables the concept is the same, i.e. http://ccu3-webui/addon/sy
 The data is parsed and added to the B4XTable name, value, ise_id with table columns Name, Value, ID
 
 ## Source Code
-The archive **ccudeviceviewer.zip** contains the (B4J)[https://www.b4x.com/b4j.html] source code.
+The archive **ccudeviceviewer.zip** contains the [B4J](https://www.b4x.com/b4j.html) source code.
 Additional libraries required: B4XCollections, B4XTable, jOkHttpUtils2, Json, Xml2Map, XUI Views.
 
 ## To-do
@@ -73,4 +74,4 @@ Additional libraries required: B4XCollections, B4XTable, jOkHttpUtils2, Json, Xm
 * Simplify the CCUClass.
 
 ## Licence
-GNU GENERAL Public LICENSE
+GNU GENERAL PUBLIC LICENSE v3.0
