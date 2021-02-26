@@ -1,11 +1,11 @@
 # CCU Device Viewer
 Open Source Project viewing all devices and current values from the HomeMatic Smart Home Central Control Unit.
-### View Option: All datapoints for the device selected
+#### View Option: All datapoints for the device selected
 ![hmdv-1](https://user-images.githubusercontent.com/47274144/109273097-07c49400-7812-11eb-97cc-531363982171.png)
-### View Option: Filter by XML Attribute ACTUAL_TEMPERATURE
+#### View Option: Filter by XML Attribute ACTUAL_TEMPERATURE
 ![hmdv-2](https://user-images.githubusercontent.com/47274144/109273125-114dfc00-7812-11eb-8013-e798bbfc17a6.png)
 
-### Purpose
+#### Purpose
 * To view the state of devices and their datapoints as configured in the CCU.
 * To get device datapoint ID (XML attribute ise_id) used for XML-API HTTP requests.
 * To quickly view the state of a device.
@@ -15,18 +15,17 @@ Open Source Project viewing all devices and current values from the HomeMatic Sm
 * To save XML-API HTTP response to a text file with XML tree.
 * To have fun developing with [B4J](https://www.b4x.com/b4j.html).
 
-HomeMatic is a registered trademark of eQ-3 AG [Info](https://www.HomeMatic.com).
-Requires the HomeMatic XML-API CCU Addon, which must be installed to enable reading values [Info](https://github.com/hobbyquaker/XML-API).
+HomeMatic is a registered trademark of eQ-3 AG [Info](https://www.homematic.com).
 
-### Requirements
-* Installation of the CCU [XML-API](https://github.com/hobbyquaker/XML-API) addon.
-* Java 8 including JavaFX OR
-* Java 11 with JavaFX.
+#### Requirements
+* HomeMatic CCU
+* HomeMatic [XML-API](https://github.com/hobbyquaker/XML-API) CCU addon, used to read/write values from/to the CCU.
+* Java 8 OR Java 11. Must[read](https://www.b4x.com/b4j.html) - Note: JavaFX is used.
 
 ### Application
 * tested with an HomeMatic CCU3 3.55 10 and the XML-API CCU Addon 1.20.
-* developed with [B4J](https://www.b4x.com/b4j.html) v8.90 [more info](https://www.b4x.com).
-* an open source project for personal use only according the GNU GENERAL Public LICENSE; Usage at your own risk.
+* developed with [B4J](https://www.b4x.com/b4j.html) v8.90 [more info](https://www.b4x.com) about the B4X Products.
+* created as an Open Source project for personal use only, according the GNU GENERAL PUBLIC LICENSE; Usage at your own risk.
 
 ### Installation Windows
 Unpack the archive to a folder of choice.
@@ -34,7 +33,7 @@ Run
 ```
 <path-to-java>\java -jar ccudeviceviewer.jar
 ```
-or use run using start - example with JDK8 path set:
+or run using start - example with JDK8 path set:
 ```
 start "" c:\prog\jdk8\bin\javaw.exe -jar ccudeviceviewer.jar
 ```
@@ -59,8 +58,8 @@ The B4XTable is also used to populate filtered data from all devices.
 The table has columns for the XML attributes: device type, device ise_id, datapoint value, datapoint ise_id.
 The column headings are Device_Type, Device_Value, Datapoint_Value, Datapoint_ID.
 
-For the systemvariables the concept is the same, i.e. http://ccu3-webui/addon/sysvarlist.cgi.
-The data is parsed and added to the B4XTable name, value, ise_id with table columns Name, Value, ID
+For the systemvariables the concept is the same, i.e. get data using XML-API HTTP request http://ccu3-webui/addon/sysvarlist.cgi.
+The returned XML tree is parsed and data, name, value, ise_id is added to the B4XTable columns Name, Value, ID
 
 ### Source Code
 The archive **ccudeviceviewer.zip** contains the [B4J](https://www.b4x.com/b4j.html) source code.
@@ -73,4 +72,4 @@ Additional libraries required: B4XCollections, B4XTable, jOkHttpUtils2, Json, Xm
 * Simplify the CCUClass.
 
 ### Licence
-GNU GENERAL PUBLIC LICENSE v3.0
+GNU GENERAL PUBLIC LICENSE v3.0.
