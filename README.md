@@ -22,9 +22,10 @@ Open Source Project viewing all devices and current values from the [HomeMatic](
 * Java 8 OR Java 11 to run the application **ccudeviceviewer.jar**. Must[read](https://www.b4x.com/b4j.html) - Note: JavaFX is used.
 
 ### Application
+* created as an Open Source project for personal use only, according the GNU GENERAL PUBLIC LICENSE; Usage at your own risk.
 * tested with an HomeMatic CCU3 3.55 10 and the XML-API CCU Addon 1.20.
 * developed with [B4J](https://www.b4x.com/b4j.html) v8.90 [more info](https://www.b4x.com) about the B4X Products.
-* created as an Open Source project for personal use only, according the GNU GENERAL PUBLIC LICENSE; Usage at your own risk.
+* published on the [B4J Forum](https://www.b4x.com/android/forum/threads/homematic-smart-home-ccu-device-viewer.128070/).
 
 ### Installation Windows
 Unpack the archive to a folder of choice.
