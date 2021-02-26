@@ -1,5 +1,5 @@
 # CCU Device Viewer
-Open Source Project viewing all devices and current values from the HomeMatic Smart Home Central Control Unit.
+Open Source Project viewing all devices and current values from the [HomeMatic](https://www.homematic.com) Smart Home [Central Control Unit](https://www.eq-3.com/products/homematic/detail/smart-home-central-control-unit-ccu3.html).
 #### View Option: All datapoints for the device selected
 ![hmdv-1](https://user-images.githubusercontent.com/47274144/109273097-07c49400-7812-11eb-97cc-531363982171.png)
 #### View Option: Filter by XML Attribute ACTUAL_TEMPERATURE
@@ -15,10 +15,10 @@ Open Source Project viewing all devices and current values from the HomeMatic Sm
 * To save XML-API HTTP response to a text file with XML tree.
 * To have fun developing with [B4J](https://www.b4x.com/b4j.html).
 
-HomeMatic is a registered trademark of eQ-3 AG [Info](https://www.homematic.com).
+[HomeMatic](https://www.homematic.com) is a registered trademark of [eQ-3 AG](https://www.eq-3.com/start.html).
 
 #### Requirements
-* HomeMatic CCU
+* HomeMatic Smart Home [Central Control Unit](https://www.eq-3.com/products/homematic/detail/smart-home-central-control-unit-ccu3.html).
 * HomeMatic [XML-API](https://github.com/hobbyquaker/XML-API) CCU addon, used to read/write values from/to the CCU.
 * Java 8 OR Java 11. Must[read](https://www.b4x.com/b4j.html) - Note: JavaFX is used.
 
