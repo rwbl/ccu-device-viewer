@@ -1,12 +1,11 @@
 # CCU Device Viewer
 Open Source Project viewing all devices and current values from the HomeMatic Smart Home Central Control Unit.
+### View Option: All datapoints for the device selected
 ![hmdv-1](https://user-images.githubusercontent.com/47274144/109273097-07c49400-7812-11eb-97cc-531363982171.png)
-**View Option: All datapoints for the device selected**
-
+### View Option: Filter by XML Attribute ACTUAL_TEMPERATURE
 ![hmdv-2](https://user-images.githubusercontent.com/47274144/109273125-114dfc00-7812-11eb-8013-e798bbfc17a6.png)
-**View Option: Filter by XML Attribute ACTUAL_TEMPERATURE**
 
-## Purpose
+### Purpose
 * To view the state of devices and their datapoints as configured in the CCU.
 * To get device datapoint ID (XML attribute ise_id) used for XML-API HTTP requests.
 * To quickly view the state of a device.
@@ -19,17 +18,17 @@ Open Source Project viewing all devices and current values from the HomeMatic Sm
 HomeMatic is a registered trademark of eQ-3 AG [Info](https://www.HomeMatic.com).
 Requires the HomeMatic XML-API CCU Addon, which must be installed to enable reading values [Info](https://github.com/hobbyquaker/XML-API).
 
-## Requirements
+### Requirements
 * Installation of the CCU [XML-API](https://github.com/hobbyquaker/XML-API) addon.
 * Java 8 including JavaFX OR
 * Java 11 with JavaFX.
 
-## The application is 
+### Application
 * tested with an HomeMatic CCU3 3.55 10 and the XML-API CCU Addon 1.20.
 * developed with [B4J](https://www.b4x.com/b4j.html) v8.90 [more info](https://www.b4x.com).
 * an open source project for personal use only according the GNU GENERAL Public LICENSE; Usage at your own risk.
 
-## Installation Windows
+### Installation Windows
 Unpack the archive to a folder of choice.
 Run
 ```
@@ -42,7 +41,7 @@ start "" c:\prog\jdk8\bin\javaw.exe -jar ccudeviceviewer.jar
 
 The file ccudeviceviewer.json maintains the settings.
 
-## Concept
+### Concept
 The device data from the CCU is obtained via HTTP XML-API request (running a script), i.e. http://ccu3-webui/addon/devicelist.cgi.
 The HTTP XML-API requests response is an XML tree which is parsed to a map. The map contains lists and maps for the devices and datapoints.
 The devices are selected and their XML attributes name, ise_id, device_type are used to populate a custom listview Devices.
@@ -63,15 +62,15 @@ The column headings are Device_Type, Device_Value, Datapoint_Value, Datapoint_ID
 For the systemvariables the concept is the same, i.e. http://ccu3-webui/addon/sysvarlist.cgi.
 The data is parsed and added to the B4XTable name, value, ise_id with table columns Name, Value, ID
 
-## Source Code
+### Source Code
 The archive **ccudeviceviewer.zip** contains the [B4J](https://www.b4x.com/b4j.html) source code.
 Additional libraries required: B4XCollections, B4XTable, jOkHttpUtils2, Json, Xml2Map, XUI Views.
 
-## To-do
+### To-do
 * Change the value of a selected datapoint via B4X dialog ("quickset function").
 * Multiple XML attribute filters (instead one).
 * Run HomeMatic scripts remote and capture the output (to be explored).
 * Simplify the CCUClass.
 
-## Licence
+### Licence
 GNU GENERAL PUBLIC LICENSE v3.0
