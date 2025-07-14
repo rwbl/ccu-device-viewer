@@ -19,7 +19,7 @@ Open Source Project viewing all devices and current values from the [HomeMatic](
 * HomeMatic Smart Home [Central Control Unit](https://www.eq-3.com/products/homematic/detail/smart-home-central-control-unit-ccu3.html).
 * [HomeMatic](https://www.homematic.com) is a registered trademark of [eQ-3 AG](https://www.eq-3.com/start.html).
 * HomeMatic [XML-API](http://github.com/homematic-community/XML-API) CCU addon to read values from the CCU. Ensure to obtain the mandatory security access token.
-* Java JDK 19 to run the application **ccudeviceviewer.jar**. Must[read](https://www.b4x.com/b4j.html) - Note: JavaFX is used.
+* Java JDK 19 to run the application **ccudeviceviewer.jar**. Must [read](https://www.b4x.com/b4j.html) - Note: JavaFX is used, download the recommended Java JDK package from B4J website.
 
 ## Application
 * created as an Open Source project for personal use only, according the GNU GENERAL PUBLIC LICENSE; Usage at your own risk.
@@ -29,10 +29,9 @@ Open Source Project viewing all devices and current values from the [HomeMatic](
 * published on the [B4J Forum](https://www.b4x.com/android/forum/threads/homematic-smart-home-ccu-device-viewer.128070/).
 
 ## Installation Windows
-Unpack the archive to a folder of choice.
-Run the application from the B4J IDE or using run19.bat.
-
-The file ccudeviceviewer.json maintains the settings.
+- Unpack the archive to a folder of choice.
+- Run the application from the B4J IDE or using run19.bat.
+- The file ccudeviceviewer.json maintains the settings.
 
 ## Concept
 The device data from the CCU is obtained via HTTP XML-API request (running a script), i.e. http://ccu3-webui/addon/devicelist.cgi.
