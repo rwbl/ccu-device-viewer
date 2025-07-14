@@ -1,11 +1,11 @@
 # CCU Device Viewer
 Open Source Project viewing all devices and current values from the [HomeMatic](https://www.homematic.com) Smart Home [Central Control Unit](https://www.eq-3.com/products/homematic/detail/smart-home-central-control-unit-ccu3.html).
-##### View Option: All datapoints for the device selected
-![hmdv-1](https://user-images.githubusercontent.com/47274144/109273097-07c49400-7812-11eb-97cc-531363982171.png)
-##### View Option: Filter by XML Attribute ACTUAL_TEMPERATURE
-![hmdv-2](https://user-images.githubusercontent.com/47274144/109273125-114dfc00-7812-11eb-8013-e798bbfc17a6.png)
+## View Option: All datapoints for the device selected
+<img width="802" height="630" alt="Image" src="https://github.com/user-attachments/assets/41a6ed7c-5234-41d0-93fc-ba1eaa45876d" />
+## View Option: Filter by XML Attribute ACTUAL_TEMPERATURE
+<img width="803" height="632" alt="Image" src="https://github.com/user-attachments/assets/952d795c-385c-441a-a501-882428c60915" />
 
-#### Purpose
+## Purpose
 * To view the state of devices and their datapoints as configured in the CCU.
 * To get device datapoint(s) ID (XML attribute ise_id = "NNN") used for XML-API HTTP requests via for example Domoticz Homeautomation.
 * To quickly view the status of a device.
@@ -15,32 +15,26 @@ Open Source Project viewing all devices and current values from the [HomeMatic](
 * To save XML-API HTTP response to a text file with XML tree.
 * To have fun developing with [B4J](https://www.b4x.com/b4j.html).
 
-#### Requirements
+## Requirements
 * HomeMatic Smart Home [Central Control Unit](https://www.eq-3.com/products/homematic/detail/smart-home-central-control-unit-ccu3.html).
 * [HomeMatic](https://www.homematic.com) is a registered trademark of [eQ-3 AG](https://www.eq-3.com/start.html).
-* HomeMatic [XML-API](https://github.com/hobbyquaker/XML-API) CCU addon to read values from the CCU.
-* Java 8 OR Java 11 to run the application **ccudeviceviewer.jar**. Must[read](https://www.b4x.com/b4j.html) - Note: JavaFX is used.
+* HomeMatic [XML-API](http://github.com/homematic-community/XML-API) CCU addon to read values from the CCU. Ensure to obtain the mandatory security access token.
+* Java JDK 19 to run the application **ccudeviceviewer.jar**. Must[read](https://www.b4x.com/b4j.html) - Note: JavaFX is used.
 
-### Application
+## Application
 * created as an Open Source project for personal use only, according the GNU GENERAL PUBLIC LICENSE; Usage at your own risk.
-* tested with an HomeMatic CCU3 3.55 10 and the XML-API CCU Addon 1.20.
-* developed with [B4J](https://www.b4x.com/b4j.html) v8.90 [more info](https://www.b4x.com) about the B4X Products.
+* tested with an HomeMatic CCU3 3.83.6 and the XML-API CCU Addon 1.23.
+* developed with [B4J](https://www.b4x.com/b4j.html) v10.30 (64-bit) [more info](https://www.b4x.com) about the B4X Products.
+* tested with Java JDK 19 (see run19.bat how to start).
 * published on the [B4J Forum](https://www.b4x.com/android/forum/threads/homematic-smart-home-ccu-device-viewer.128070/).
 
-### Installation Windows
+## Installation Windows
 Unpack the archive to a folder of choice.
-Run
-```
-<path-to-java>\java -jar ccudeviceviewer.jar
-```
-or run using start - example with JDK8 path set:
-```
-start "" c:\prog\jdk8\bin\javaw.exe -jar ccudeviceviewer.jar
-```
+Run the application from the B4J IDE or using run19.bat.
 
 The file ccudeviceviewer.json maintains the settings.
 
-### Concept
+## Concept
 The device data from the CCU is obtained via HTTP XML-API request (running a script), i.e. http://ccu3-webui/addon/devicelist.cgi.
 The HTTP XML-API requests response is an XML tree which is parsed to a map. The map contains lists and maps for the devices and datapoints.
 The devices are selected and their XML attributes name, ise_id, device_type are used to populate a custom listview Devices.
@@ -61,15 +55,19 @@ The column headings are Device_Type, Device_Value, Datapoint_Value, Datapoint_ID
 For the systemvariables the concept is the same, i.e. get data using XML-API HTTP request http://ccu3-webui/addon/sysvarlist.cgi.
 The returned XML tree is parsed and data, name, value, ise_id is added to the B4XTable columns Name, Value, ID
 
-### Source Code
+## Source Code
 The archive **ccudeviceviewer.zip** contains the [B4J](https://www.b4x.com/b4j.html) source code.
 Additional libraries required: B4XCollections, B4XTable, jOkHttpUtils2, Json, Xml2Map, XUI Views.
 
-### To-do
+## ToDo
 * Change the value of a selected datapoint via B4X dialog ("quickset function").
 * Multiple XML attribute filters (instead one).
 * Run HomeMatic scripts remote and capture the output (to be explored).
 * Simplify the CCUClass.
 
-### Licence
+## Credits
+* To the developers of the HomeMatic XML-API Addon.
+
+## Licence
 GNU GENERAL PUBLIC LICENSE v3.0.
+
